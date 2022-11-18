@@ -766,6 +766,22 @@ select {
     display: none;
   }
 
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .visible-mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .menu-mobile {
+
+  }
+
   #hamburguer-container {
     display: block;
   }
