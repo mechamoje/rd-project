@@ -319,11 +319,12 @@ span {
   align-items: stretch;
 }
 
-#oportunities-form label:nth-child(10){
+#oportunities-form label:nth-child(10) {
   margin-top: 8px;
 }
 
-#oportunities-form label:nth-child(10),#oportunities-form label:nth-child(12) {
+#oportunities-form label:nth-child(10),
+#oportunities-form label:nth-child(12) {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: baseline;
@@ -909,6 +910,7 @@ select {
 
   #oportunities-form {
     width: 328px !important;
+    height: 1119px !important;
     margin: 0 !important;
   }
 
@@ -916,6 +918,14 @@ select {
     font: var(--heading-xs-mob);
   }
 
+  .form-btn::after {
+    top: 167.3%;
+  }
+
+  .form-btn,
+  .form-btn::after {
+    width: 281px !important;
+  }
   #together {
     margin-top: 40px;
     padding-inline: 16px;
@@ -1003,8 +1013,8 @@ select {
     width: 215px;
   }
 
-  .btn-highlight-enabled::after {
-    top: 219.7rem !important;
+  #banner button::after {
+    top: 209.6rem;
   }
 
   #video,
@@ -1039,14 +1049,14 @@ select {
     width: 90%;
     height: 40%;
   }
-  
+
   .thumb-container .player {
     width: 80px;
     height: 80px;
   }
 
   .video-text > button::after {
-    top: 235rem;
+    top: 225.2rem;
   }
 
   .thumb {
@@ -1075,12 +1085,14 @@ select {
     margin: 0;
     column-gap: 40px;
   }
-  .logos-btn::after {
-    top: 291.4rem;
+
+  .showmobile::after {
+    top: 291rem;
+    width: 256px;
   }
 
   .showmobile {
-    display: block;
+    display: flex;
     width: 256px;
     margin-bottom: 84px;
   }
