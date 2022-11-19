@@ -26,4 +26,5 @@ modal.addEventListener("click", () => {
 hamburguerBtn.addEventListener("click", () => {
   navList.classList.toggle("nav-mobile");
   navBar.classList.toggle("visible-mobile");
+  navLink.classList.toggle("dropdown-mobile");
 });
