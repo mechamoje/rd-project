@@ -777,7 +777,6 @@ select {
     background-color: var(--light-gray);
     align-items: center;
     justify-content: center;
-    margin-bottom: 30%;
   }
 
   .nav-mobile {
@@ -786,6 +785,7 @@ select {
     align-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .nav-mobile > li {
