@@ -656,6 +656,8 @@ select {
 
 .modal-content {
   margin-right: 10px;
+  width: 855px;
+  height: 500px;
 }
 
 .modal-close {
@@ -1025,6 +1027,19 @@ select {
     width: 328px;
   }
 
+  .modal-wrapper > #modal {
+    margin-top: 50%;
+  }
+
+  .modal-close {
+    right: -10px;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 40%;
+  }
+  
   .thumb-container .player {
     width: 80px;
     height: 80px;
