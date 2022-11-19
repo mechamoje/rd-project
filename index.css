@@ -789,11 +789,9 @@ select {
   }
 
   .nav-mobile > li {
-    width: 100%;
     border-bottom: 1px solid var(--gray);
     padding-block: 16px;
     padding-left: 16px;
-    width: 328px;
     margin: 0;
   }
 
