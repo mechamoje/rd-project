@@ -777,6 +777,7 @@ select {
     background-color: var(--light-gray);
     align-items: center;
     justify-content: center;
+    margin-bottom: 20%;
   }
 
   .nav-mobile {
@@ -791,8 +792,7 @@ select {
   .nav-mobile > li {
     border-bottom: 1px solid var(--gray);
     padding-block: 16px;
-    padding-left: 16px;
-    margin: 0;
+    margin-inline: 16px;
   }
 
   .nav-mobile > li:first-child {
