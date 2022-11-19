@@ -758,6 +758,9 @@ select {
 @media (max-width: 550px) {
   #rd-header {
     justify-content: space-between;
+  }
+
+  .logo-container{
     padding-inline: 16px;
   }
 
@@ -769,6 +772,11 @@ select {
 
   .btns-mobile {
     display: flex;
+    height: 88px;
+    width: 100%;
+    background-color: var(--light-gray);
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-mobile {
