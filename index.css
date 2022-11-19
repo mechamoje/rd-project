@@ -824,6 +824,7 @@ select {
 
   #hamburguer-container {
     display: block;
+    padding-right: 16px;
   }
 
   #oportunities {
@@ -857,7 +858,6 @@ select {
   }
 
   #together {
-    width: 360px;
     margin-top: 40px;
     padding-inline: 16px;
   }
