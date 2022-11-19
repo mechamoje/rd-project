@@ -821,12 +821,37 @@ select {
     flex-wrap: nowrap;
   }
 
-  .menu-mobile {
+  .visible-mobile {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .menu-open {
+    grid-template-columns: 1fr;
+    width: 375px;
+    height: 440px;
+    top: 150px;
   }
 
   .dropdown-mobile {
     display: flex !important;
     justify-content: space-between;
+  }
+
+  .options-container .options a:last-child{
+    margin-bottom: 20px;
   }
 
   #hamburguer-container {
