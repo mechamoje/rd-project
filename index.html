@@ -126,50 +126,58 @@
         <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
         <span>Não precisa cadastrar cartão de crédito. 😉</span>
 
-        <label for="">Diga, qual seu nome?</label>
-        <input placeholder="Insira seu nome" type="text" />
-        <label for="">Seu email de trabalho</label>
-        <input placeholder="Insira seu e-mail" type="e-mail" />
-        <label for="">Seu telefone</label>
-        <input placeholder="Insira seu número de telefone com DDD" type="tel" />
-        <label for="">Seu cargo de ocupação</label>
-        <select required>
-          <option hidden role="placeholder">Selecione seu cargo</option>
-          <option value="hurr">Durr</option>
-          <option value="Sócio(a) / CEO / Proprietário(a)">
-            Sócio(a) / CEO / Proprietário(a)
-          </option>
-          <option value="Diretor(a) de Vendas">Diretor(a) de Vendas</option>
-          <option value="Diretor(a) de Marketing">
-            Diretor(a) de Marketing
-          </option>
-          <option value="Diretor(a) Outras Áreas">
-            Diretor(a) Outras Áreas
-          </option>
-          <option value="Gerente de Marketing">Gerente de Marketing</option>
-          <option value="Gerente de Vendas">Gerente de Vendas</option>
-          <option value="Coordenador(a)/Supervisor(a) de Marketing">
-            Coordenador(a)/Supervisor(a) de Marketing
-          </option>
-          <option value="Analista/Assistente de Marketing">
-            Analista/Assistente de Marketing
-          </option>
-          <option value="Analista/Assistente de Vendas">
-            Analista/Assistente de Vendas
-          </option>
-          <option value="Vendedor(a) / Executivo(a) de Contas">
-            Vendedor(a) / Executivo(a) de Contas
-          </option>
-          <option value="Estudante">Estudante</option>
-          <option value="Outros Cargos">Outros Cargos</option>
-        </select>
-        <label for="">Crie uma senha</label>
-        <input placeholder="" type="password" />
-        <label for="">Confirme sua senha</label>
-        <input placeholder="" type="password" />
-        <fieldset class="radio-container">
-          <label for="">Qual o site da sua empresa?</label>
+        <label for=""
+          >Diga, qual seu nome?
+          <input placeholder="Insira seu nome" type="text" />
+        </label>
+        <label for=""
+          >Seu email de trabalho
+          <input placeholder="Insira seu e-mail" type="e-mail"
+        /></label>
+        <label for=""
+          >Seu telefone
+          <input placeholder="Insira seu número de telefone com DDD" type="tel"
+        /></label>
+        <label for=""
+          >Seu cargo de ocupação
 
+          <select required class="select-list">
+            <option hidden class="placeholder" role="placeholder">
+              Selecione seu cargo
+            </option>
+            <option value="Sócio">Sócio(a) / CEO / Proprietário(a)</option>
+            <option value="Diretor">Diretor(a) de Vendas</option>
+            <option value="Diretor mkt">Diretor(a) de Marketing</option>
+            <option value="Diretor outros">Diretor(a) Outras Áreas</option>
+            <option value="Gerente mkt">Gerente de Marketing</option>
+            <option value="Gerente vendas">Gerente de Vendas</option>
+            <option value="Coordenador supervisor mkt">
+              Coordenador(a)/Supervisor(a) de Marketing
+            </option>
+            <option value="Analista mkt">
+              Analista/Assistente de Marketing
+            </option>
+            <option value="Analista vendas">
+              Analista/Assistente de Vendas
+            </option>
+            <option value="Vendedor contas">
+              Vendedor(a) / Executivo(a) de Contas
+            </option>
+            <option value="Estudante">Estudante</option>
+            <option value="Outros Cargos">Outros Cargos</option>
+          </select></label
+        >
+        <label for=""
+          >Crie uma senha <input placeholder="• • • • • • • •" type="password"
+        /></label>
+        <label for=""
+          >Confirme sua senha
+          <input placeholder="Branding-rd@2021*" type="password"
+        /></label>
+        <label for="">Qual o site da sua empresa?</label>
+
+        <label class="label-input" for="html"
+          >Meu site é
           <input
             class="radio-input"
             type="radio"
@@ -177,9 +185,12 @@
             name="fav_language"
             value="HTML"
           />
-          <label class="label-input" for="html">Meu site é </label>
+        </label>
+        <input placeholder="" type="url" />
 
-          <input placeholder="" type="url" />
+        <label class="label-input" for="css"
+          >Ainda não tenho site
+
           <input
             class="radio-input"
             type="radio"
@@ -187,8 +198,8 @@
             name="fav_language"
             value="CSS"
           />
-          <label class="label-input" for="css">Ainda não tenho site</label>
-        </fieldset>
+        </label>
+
         <small id="form-details">
           <ul>
             <li>
@@ -206,7 +217,8 @@
             </li>
           </ul>
         </small>
-        <button>Criar conta</button>
+        <button class="btn-highlight-enabled form-btn"> Criar conta </button>
+      
       </form>
       <div id="together">
         <article id="together-text">

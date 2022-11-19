@@ -104,7 +104,6 @@ section:first-of-type {
 .btn-highlight-enabled:after {
   content: "";
   border-top: 4px solid #000;
-  top: 6.3%;
   width: 448px;
   box-sizing: border-box;
   border-left: 8px solid rgba(0, 0, 0, 0);
@@ -273,7 +272,7 @@ section:first-of-type {
   margin-top: 40px;
   margin-right: 108px;
   width: 496px;
-  height: 1000px;
+  height: 1083px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -313,27 +312,52 @@ span {
 #oportunities-form label {
   color: var(--black);
   font: var(--body-md);
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+}
+
+#oportunities-form label:nth-child(10){
+  margin-top: 8px;
+}
+
+#oportunities-form label:nth-child(10),#oportunities-form label:nth-child(12) {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: baseline;
+  height: 24px;
 }
 
 #oportunities-form input,
 select {
   /* focus */
-  height: 40px;
   border: 2px solid #000000;
   box-shadow: inset 6px 6px 0px #eefbfb;
+  margin-top: 8px;
   margin-bottom: 16px;
+  padding: 12px;
+}
+
+.form-btn::after {
+  top: 154.2%;
 }
 
 #oportunities-form select {
   background-color: white;
 }
 
+#oportunities-form select option {
+  font: var(--body-sm);
+  color: var(--medium-gray);
+}
+
 #oportunities-form .radio-input {
   height: 12px;
-  text-align: left;
   align-self: baseline;
   box-shadow: none;
+  margin-right: 12px;
 }
 
 #oportunities > form > #form-details {
@@ -518,7 +542,7 @@ select {
 }
 
 #banner button::after {
-  top: 210.3rem;
+  top: 213rem;
 }
 
 #video {
@@ -554,7 +578,7 @@ select {
 }
 
 .video-text > button::after {
-  top: 237rem;
+  top: 239.8rem;
 }
 
 .video-text button > figure {
@@ -674,7 +698,7 @@ select {
 .logos-btn::after {
   content: "";
   border-top: 4px solid #000;
-  top: 266.6rem;
+  top: 269.3rem;
   width: 257px;
   box-sizing: border-box;
   border-left: 8px solid rgba(0, 0, 0, 0);
@@ -760,7 +784,7 @@ select {
     justify-content: space-between;
   }
 
-  .logo-container{
+  .logo-container {
     padding-inline: 16px;
   }
 
@@ -803,7 +827,8 @@ select {
     border: none;
   }
 
-  .navbtn-sec:after, .btn-primary-enabled:after {
+  .navbtn-sec:after,
+  .btn-primary-enabled:after {
     top: 93%;
   }
 
@@ -825,13 +850,13 @@ select {
     animation-duration: 1s;
     animation-name: slidein;
   }
-  
+
   @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -850,7 +875,7 @@ select {
     justify-content: space-between;
   }
 
-  .options-container .options a:last-child{
+  .options-container .options a:last-child {
     margin-bottom: 20px;
   }
 
