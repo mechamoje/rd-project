@@ -124,32 +124,41 @@
 
       <form
         id="oportunities-form"
-        method="post"
-        action="https://rdstation-signup-psel.herokuapp.com"
       >
         <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
         <span>Não precisa cadastrar cartão de crédito. 😉</span>
 
-        <label class="first-label" for=""
+        <label class="first-label" for="name"
           >Diga, qual seu nome?
-          <input required placeholder="Insira seu nome" type="text" />
+          <input
+            required
+            placeholder="Insira seu nome"
+            type="text"
+            id="name"
+            name="name"
+          />
         </label>
-        <label for=""
+        <label for="e-mail"
           >Seu email de trabalho
-          <input required placeholder="Insira seu e-mail" type="e-mail"
+          <input
+            required
+            placeholder="Insira seu e-mail"
+            type="e-mail"
+            id="e-mail"
+            name="e-mail"
         /></label>
-        <label for=""
+        <label for="tel-input"
           >Seu telefone
           <input
             required
             placeholder="Insira seu número de telefone com DDD"
-            type="tel"
+            type="text"
             id="tel-input"
-            maxlength="11"
+            name="tel"
+            maxlength="15"
         /></label>
-        <label for=""
+        <label for="cargo"
           >Seu cargo de ocupação
-
           <select required class="select-list">
             <option hidden class="placeholder" role="placeholder">
               Selecione seu cargo
@@ -177,8 +186,8 @@
           </select></label
         >
         <div id="password-box">
-          <label for=""
-            >Crie uma senha
+          <label for="password1">
+            Crie uma senha <span id="errormsg1"></span>
             <input
               id="password1"
               minlength="6"
@@ -186,14 +195,15 @@
               required
               placeholder="• • • • • • • •"
               type="password"
+              oninput="testPassword1()"
+              name="first-password"
             />
           </label>
-          <div class="icon1" onclick="showHidePassword1()" >
-          </div>
+          <div class="icon1" onclick="showHidePassword1()"></div>
         </div>
         <div id="second-password-box">
-          <label for=""
-            >Confirme sua senha
+          <label for="password2"
+            >Confirme sua senha <span id="errormsg2"></span>
             <input
               minlength="6"
               maxlength="12"
@@ -201,35 +211,33 @@
               placeholder="Branding-rd@2021*"
               id="password2"
               type="password"
+              oninput="testPassword2()"
+              name="second-password"
           /></label>
-          <div class="icon2" onclick="showHidePassword2()" >
-          </div>
+          <div class="icon2" onclick="showHidePassword2()"></div>
         </div>
-        <label for="">Qual o site da sua empresa?</label>
-
-        <label class="label-input" for="html"
+        <label for="site">Qual o site da sua empresa?</label>
+        <label class="label-input" for="has-website"
           >Meu site é
           <input
-            required
             class="radio-input"
             type="radio"
-            id="html"
-            name="fav_language"
-            value="HTML"
+            id="has-website"
+            name="has-website"
+            value="has-website"
           />
         </label>
         <input required placeholder="" type="url" />
 
-        <label class="label-input" for="css"
+        <label class="label-input" for="no-website"
           >Ainda não tenho site
 
           <input
-            required
             class="radio-input"
             type="radio"
-            id="css"
-            name="fav_language"
-            value="CSS"
+            id="no-website"
+            name="no-website"
+            value="no-website"
           />
         </label>
 
@@ -237,8 +245,20 @@
           <ul>
             <li>
               Ao criar minha conta estou de acordo com os
-              <a href="">termos de uso </a> do software e
-              <a href=""> política de privacidade.</a>
+              <a
+                href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/"
+                target="_blank"
+                rel="noreferrer"
+                >termos de uso
+              </a>
+              do software e
+              <a
+                href="https://legal.rdstation.com/pt/privacy-policy/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                política de privacidade.</a
+              >
             </li>
             <li>
               Ao preencher o formulário, concordo em receber comunicações de
@@ -252,7 +272,7 @@
         </small>
         <button
           class="btn-highlight-enabled form-btn"
-          onclick="comparePasswords()"
+          type="submit"
           name="account-form"
           value="filled-account-form"
           role="enviar formulário e criar conta"
@@ -286,38 +306,23 @@
         <p>Torne sua atuação no Marketing Digital mais eficaz</p>
         <ul>
           <li>
-            <figure>
-              <img src="./assets/icons/check.svg" alt="símbolo de checklist" />
-            </figure>
             <b> Ferramentas intuitivas</b> e com modelos prontos, vídeos
             explicativos e passo a passo guiado
           </li>
           <li>
-            <figure>
-              <img src="./assets/icons/check.svg" alt="símbolo de checklist" />
-            </figure>
             <b> Implementação com especialistas</b> focada em planejamento e
             prática (nos planos Marketing Pro e Enterprise)
           </li>
           <li>
-            <figure>
-              <img src="./assets/icons/check.svg" alt="símbolo de checklist" />
-            </figure>
             <b>Time de especialistas em Sucesso do Cliente </b> para apoiar na
             otimização da estratégia em cada fase da sua jornada (nos planos
             Marketing Pro e Enterprise)
           </li>
           <li>
-            <figure>
-              <img src="./assets/icons/check.svg" alt="símbolo de checklist" />
-            </figure>
             <b> Suporte técnico</b> em português, espanhol e inglês para tirar
             dúvidas, com 97% de satisfação entre nossos clientes
           </li>
           <li>
-            <figure>
-              <img src="./assets/icons/check.svg" alt="símbolo de checklist" />
-            </figure>
             <b>Muito conteúdo educativo</b>, eventos, cursos da
             <a> RD University</a> e comunidades para você continuar evoluindo
           </li>
@@ -410,7 +415,7 @@
         importam com seus resultados e um ecossistema que apoia o seu negócio do
         planejamento à prática.
       </p>
-      <button class="btn-highlight-enabled">
+      <button class="btn-highlight-enabled bannerbtn">
         <a
           href="https://app.rdstation.com.br/signup"
           target="_blank"
@@ -515,11 +520,14 @@
         </figure>
       </div>
 
-      <button class="btn-primary-enabled showmobile" > <a href="https://app.rdstation.com.br/signup"
-        target="_blank"
-        rel="noreferrer"
+      <button class="btn-primary-enabled showmobile">
+        <a
+          href="https://app.rdstation.com.br/signup"
+          target="_blank"
+          rel="noreferrer"
         >
-        Criar conta gratuita </a>
+          Criar conta gratuita
+        </a>
       </button>
     </section>
 
@@ -532,7 +540,10 @@
         </figure>
         <div class="social-list">
           <figure>
-            <a href=""
+            <a
+              href="https://twitter.com/rd_station"
+              target="_blank"
+              rel="noreferrer"
               ><img
                 src="./assets/social/twitter.svg"
                 alt=""
@@ -540,12 +551,18 @@
             /></a>
           </figure>
           <figure>
-            <a href=""
+            <a
+              href="https://www.facebook.com/ResultadosDigitais/"
+              target="_blank"
+              rel="noreferrer"
               ><img src="./assets/social/fb.svg" alt="" class="footer-logos"
             /></a>
           </figure>
           <figure>
-            <a href=""
+            <a
+              href="https://www.linkedin.com/company/resultadosdigitais"
+              target="_blank"
+              rel="noreferrer"
               ><img
                 src="./assets/social/linkedin.svg"
                 alt=""
@@ -553,12 +570,18 @@
             /></a>
           </figure>
           <figure>
-            <a href=""
+            <a
+              href="https://www.instagram.com/resdigitais/"
+              target="_blank"
+              rel="noreferrer"
               ><img src="./assets/social/insta.svg" alt="" class="footer-logos"
             /></a>
           </figure>
           <figure>
-            <a href=""
+            <a
+              href="https://www.youtube.com/channel/UC5lPKvmw6-DFya_qreisENQ"
+              target="_blank"
+              rel="noreferrer"
               ><img
                 src="./assets/social/youtube.svg"
                 alt=""
