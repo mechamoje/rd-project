@@ -488,17 +488,8 @@ select {
 
 #results-text ul {
   list-style-image: url(./assets/icons/check.svg);
-  padding-left: 19px;
+  padding-left: 25px;
 }
-
-
-/* #results-text ul li::before {
-  content: url(./assets/icons/check.svg);
-  position: relative;
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-} */
 
 #tools > h3 {
   font: var(--heading-md-desk);
@@ -977,6 +968,10 @@ select {
   #tools {
     display: flex;
     margin-inline: 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
   }
 
   #tools > h3 {
@@ -986,7 +981,10 @@ select {
   }
 
   #cards-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
 
   #banner {
