@@ -122,21 +122,30 @@
         </p>
       </article>
 
-      <form id="oportunities-form">
+      <form
+        id="oportunities-form"
+        method="post"
+        action="https://rdstation-signup-psel.herokuapp.com"
+      >
         <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
         <span>Não precisa cadastrar cartão de crédito. 😉</span>
 
-        <label for=""
+        <label class="first-label" for=""
           >Diga, qual seu nome?
-          <input placeholder="Insira seu nome" type="text" />
+          <input required placeholder="Insira seu nome" type="text" />
         </label>
         <label for=""
           >Seu email de trabalho
-          <input placeholder="Insira seu e-mail" type="e-mail"
+          <input required placeholder="Insira seu e-mail" type="e-mail"
         /></label>
         <label for=""
           >Seu telefone
-          <input placeholder="Insira seu número de telefone com DDD" type="tel"
+          <input
+            required
+            placeholder="Insira seu número de telefone com DDD"
+            type="tel"
+            id="tel-input"
+            maxlength="11"
         /></label>
         <label for=""
           >Seu cargo de ocupação
@@ -167,18 +176,65 @@
             <option value="Outros Cargos">Outros Cargos</option>
           </select></label
         >
-        <label for=""
-          >Crie uma senha <input placeholder="• • • • • • • •" type="password"
-        /></label>
-        <label for=""
-          >Confirme sua senha
-          <input placeholder="Branding-rd@2021*" type="password"
-        /></label>
+        <div id="password-box">
+          <label for=""
+            >Crie uma senha
+            <input
+              id="password1"
+              minlength="6"
+              maxlength="12"
+              required
+              placeholder="• • • • • • • •"
+              type="password"
+            />
+          </label>
+          <div onclick="showHidePassword1()" class="password-btn">
+            <img
+              id="eye1"
+              role="botão esconder senha"
+              src="./assets/icons/showpassword.svg"
+              alt="olho fechado para esconder senha"
+            />
+            <img
+              class="hide1"
+              role="botão mostrar senha"
+              src="./assets/icons/hidepassword.svg"
+              alt="olho aberto para mostrar senha"
+            />
+          </div>
+        </div>
+        <div id="second-password-box">
+          <label for=""
+            >Confirme sua senha
+            <input
+              minlength="6"
+              maxlength="12"
+              required
+              placeholder="Branding-rd@2021*"
+              id="password2"
+              type="password"
+          /></label>
+          <div class="password-btn" onclick="showHidePassword2()">
+            <img
+              id="eye2"
+              role="botão esconder senha"
+              src="./assets/icons/showpassword.svg"
+              alt="olho fechado para esconder senha"
+            />
+            <img
+              class="hide2"
+              role="botão mostrar senha"
+              src="./assets/icons/hidepassword.svg"
+              alt="olho aberto para mostrar senha"
+            />
+          </div>
+        </div>
         <label for="">Qual o site da sua empresa?</label>
 
         <label class="label-input" for="html"
           >Meu site é
           <input
+            required
             class="radio-input"
             type="radio"
             id="html"
@@ -186,12 +242,13 @@
             value="HTML"
           />
         </label>
-        <input placeholder="" type="url" />
+        <input required placeholder="" type="url" />
 
         <label class="label-input" for="css"
           >Ainda não tenho site
 
           <input
+            required
             class="radio-input"
             type="radio"
             id="css"
@@ -217,8 +274,15 @@
             </li>
           </ul>
         </small>
-        <button class="btn-highlight-enabled form-btn"> Criar conta </button>
-      
+        <button
+          class="btn-highlight-enabled form-btn"
+          onclick="comparePasswords()"
+          name="account-form"
+          value="filled-account-form"
+          role="enviar formulário e criar conta"
+        >
+          Criar conta
+        </button>
       </form>
       <div id="together">
         <article id="together-text">
@@ -370,7 +434,14 @@
         importam com seus resultados e um ecossistema que apoia o seu negócio do
         planejamento à prática.
       </p>
-      <button class="btn-highlight-enabled">criar conta gratuita</button>
+      <button class="btn-highlight-enabled">
+        <a
+          href="https://app.rdstation.com.br/signup"
+          target="_blank"
+          rel="noreferrer"
+        ></a>
+        criar conta gratuita
+      </button>
     </section>
 
     <section id="video">
@@ -396,7 +467,7 @@
           </div>
           <iframe
             class="modal-content"
-            src="https://www.youtube.com/embed/lGCesaaLi4s"
+            src="https://www.youtube.com/embed/lGCesaaLi4s?autoplay=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; figure-in-figure"
@@ -415,7 +486,13 @@
         </p>
 
         <button class="btn-primary-enabled logos-btn">
-          Criar conta gratuita
+          <a
+            href="https://app.rdstation.com.br/signup"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Criar conta gratuita
+          </a>
         </button>
       </article>
 
@@ -462,8 +539,11 @@
         </figure>
       </div>
 
-      <button class="btn-primary-enabled showmobile">
-        Criar conta gratuita
+      <button class="btn-primary-enabled showmobile" > <a href="https://app.rdstation.com.br/signup"
+        target="_blank"
+        rel="noreferrer"
+        >
+        Criar conta gratuita </a>
       </button>
     </section>
 

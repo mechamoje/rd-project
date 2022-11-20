@@ -305,7 +305,7 @@ span {
   padding-bottom: 24px;
 }
 
-#oportunities-form label:first-of-type {
+#oportunities-form .first-label {
   padding-top: 24px;
 }
 
@@ -339,6 +339,33 @@ select {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 12px;
+}
+
+#oportunities-form div {
+  margin: 0;
+  padding: 0;
+}
+
+#password-box img, #second-password-box img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 93.5%;
+  right: 145px;
+  cursor: pointer;
+}
+
+#second-password-box img {
+  top: 105.8%;
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
 }
 
 .form-btn::after {
@@ -917,6 +944,16 @@ select {
   #oportunities-form > h4 {
     font: var(--heading-xs-mob);
   }
+
+  #password-box img, #second-password-box img {
+    top: 89%;
+    right: 75px;
+  }
+  
+  #second-password-box img {
+    top: 109.7%;
+  }
+  
 
   .form-btn::after {
     top: 167.3%;
