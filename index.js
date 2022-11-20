@@ -72,33 +72,27 @@ function comparePasswords() {
 }
 
 function showHidePassword1() {
-  var senha = document.querySelector("#password1");
-  const closedEye = document.querySelector("#eye1");
-  const openedEye = document.querySelector(".hide");
-  if (senha.type == "password") {
-    senha.type = "text";
-    closedEye.classList.toggle("hide");
-    openedEye.classList.toggle("show");
-    console.log("show");
+  var passwordInput = document.querySelector("#password1");
+  const closedEye1 = document.querySelector(".icon1");
+
+  if (passwordInput.type == "password") {
+    passwordInput.type = "text";
+    closedEye1.classList.add("hide-pass");
   } else {
-    senha.type = "password";
-    console.log("hide");
+    passwordInput.type = "password";
+    closedEye1.classList.remove("hide-pass");
   }
 }
 
 function showHidePassword2() {
-  var senha = document.querySelector("#password2");
-  const closedEye = document.querySelector("#eye2");
-  const openedEye = document.querySelector(".hide2");
-  if (senha.type == "password") {
-    senha.type = "text";
-    closedEye.classList.toggle("hide");
-    openedEye.classList.toggle("show");
-    console.log("show");
+  var passwordInput = document.querySelector("#password2");
+  const closedEye1 = document.querySelector(".icon2");
+
+  if (passwordInput.type == "password") {
+    passwordInput.type = "text";
+    closedEye1.classList.add("hide-pass");
   } else {
-    senha.type = "password";
-    closedEye.classList.toggle("hide");
-    openedEye.classList.toggle("show");
-    console.log("hide");
+    passwordInput.type = "password";
+    closedEye1.classList.remove("hide-pass");
   }
 }

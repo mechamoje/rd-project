@@ -346,18 +346,19 @@ select {
   padding: 0;
 }
 
-#password-box img, #second-password-box img {
+.icon1, .icon2, .hide-pass {
+  position: absolute;
+  background: url(./assets/icons/hidepassword.svg) no-repeat;
+  background-size: contain;
   width: 15px;
   height: 15px;
-  position: absolute;
-  top: 93.5%;
-  right: 145px;
   cursor: pointer;
+  transform: translateY(-285%) translateX(26.2em);
 }
 
-#second-password-box img {
-  top: 105.8%;
-  cursor: pointer;
+.hide-pass {
+  background: url(./assets/icons/showpassword.svg) no-repeat;
+  background-size: contain;
 }
 
 .hide{
@@ -945,15 +946,9 @@ select {
     font: var(--heading-xs-mob);
   }
 
-  #password-box img, #second-password-box img {
-    top: 89%;
-    right: 75px;
+ .icon1, .icon2, .hide-pass{
+    transform: translateY(-285%) translateX(15.5em);
   }
-  
-  #second-password-box img {
-    top: 109.7%;
-  }
-  
 
   .form-btn::after {
     top: 167.3%;
