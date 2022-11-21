@@ -9,6 +9,20 @@ const hamburguerBtn = document.querySelector("#hamburguer-container");
 const navList = document.querySelector(".nav-list");
 const navBar = document.querySelector(".navbar");
 
+var string = "oportunidades";
+var array = string.split("");
+var timer;
+
+function frameLooper () {
+  if (array.length > 0) {
+    document.querySelector("#oportunity-text").innerHTML += array.shift();
+  } else {
+    clearTimeout(timer);
+      }
+  loopTimer = setTimeout('frameLooper()', 110);
+}
+frameLooper();
+
 navLink.addEventListener("click", () => {
   menu.classList.toggle("menu-open");
 });

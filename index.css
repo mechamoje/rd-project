@@ -336,7 +336,6 @@ span {
 
 #oportunities-form input,
 select {
-  /* focus */
   border: 2px solid #000000;
   box-shadow: inset 6px 6px 0px #eefbfb;
   margin-top: 8px;
@@ -595,7 +594,11 @@ select {
   height: 64px;
   display: flex;
   justify-content: center;
-  align-items: center; /* colocar hover */
+  align-items: center;
+}
+
+.card:hover {
+  background-color: var(--light-gray);
 }
 
 #banner {
@@ -1075,6 +1078,10 @@ select {
     height: 435px;
   }
 
+  .card > h4 {
+    font: var(--heading-sm-mob);
+  }
+
   .navigation-auto {
     display: flex;
     flex-direction: row;
@@ -1113,10 +1120,6 @@ select {
     background-size: cover;
     margin-block: 0 64px;
   }
-
-  /* .bannerbtn a {
-    width: 183px;
-  } */
 
   #banner > p,
   #banner > h3 {
