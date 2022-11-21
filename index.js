@@ -1,29 +1,28 @@
-const navLink = document.querySelector(".dropdown-click");
-const menu = document.querySelector("#dropdown-menu");
 const play = document.querySelector(".player");
 const playBtn = document.querySelector(".videobtn");
 const modal = document.querySelector(".modal-wrapper");
 const close = document.querySelector(".modal-close");
 const video = document.querySelector(".modal-content");
+const navLink = document.querySelector(".dropdown-click");
 const hamburguerBtn = document.querySelector("#hamburguer-container");
-const navList = document.querySelector(".nav-list");
-const navBar = document.querySelector(".navbar");
 
-var string = "oportunidades";
-var array = string.split("");
-var timer;
+let string = "oportunidades";
+let array = string.split("");
+let timer;
 
-function frameLooper () {
+function frameLooper() {
   if (array.length > 0) {
     document.querySelector("#oportunity-text").innerHTML += array.shift();
   } else {
     clearTimeout(timer);
-      }
-  loopTimer = setTimeout('frameLooper()', 110);
+  }
+  loopTimer = setTimeout("frameLooper()", 110);
 }
+
 frameLooper();
 
 navLink.addEventListener("click", () => {
+  const menu = document.querySelector("#dropdown-menu");
   menu.classList.toggle("menu-open");
 });
 
@@ -54,6 +53,8 @@ modal.addEventListener("click", () => {
 });
 
 hamburguerBtn.addEventListener("click", () => {
+  const navList = document.querySelector(".nav-list");
+  const navBar = document.querySelector(".navbar");
   navList.classList.toggle("nav-mobile");
   navBar.classList.toggle("visible-mobile");
   navLink.classList.toggle("dropdown-mobile");
@@ -237,7 +238,6 @@ function showFeedback(e) {
   }
 }
 
-
 const slideBtn1 = document.querySelector(".auto-btn1");
 const slideBtn2 = document.querySelector(".auto-btn2");
 const slideBtn3 = document.querySelector(".auto-btn3");
@@ -340,4 +340,3 @@ slideBtn3.addEventListener("click", slide3);
 slideBtn4.addEventListener("click", slide4);
 slideBtn5.addEventListener("click", slide5);
 slideBtn6.addEventListener("click", slide6);
-//algn video
