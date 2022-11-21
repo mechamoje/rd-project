@@ -340,3 +340,4 @@ slideBtn3.addEventListener("click", slide3);
 slideBtn4.addEventListener("click", slide4);
 slideBtn5.addEventListener("click", slide5);
 slideBtn6.addEventListener("click", slide6);
+//algn video

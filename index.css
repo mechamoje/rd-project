@@ -249,7 +249,9 @@ section:first-of-type {
 #results,
 #tools,
 #logos,
-#footer-wrapper {
+#footer-wrapper,
+#video-wrapper,
+#together {
   max-width: 1440px;
   margin: auto;
 }
@@ -454,8 +456,6 @@ select {
   height: 331px;
   display: flex;
   align-items: center;
-  margin: auto;
-  max-width: 1440px;
 }
 
 #together-wrapper:before {
@@ -631,8 +631,10 @@ select {
 #video-wrapper {
   display: flex;
   align-content: center;
-  margin: auto;
-  max-width: 1440px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 317px;
 }
 
 .video-text > h3 {
@@ -645,16 +647,11 @@ select {
   height: 317px;
   align-content: center;
   margin-right: 108px;
-  display: flex;
 }
 
 #video .video-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 66px 80px 66px 108px;
-  justify-content: center;
-}
+  margin-right: 80px;
+} 
 
 .video-text button {
   width: 270px;
