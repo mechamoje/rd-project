@@ -145,7 +145,7 @@ function testPassword2() {
   if (secondInput.value.length >= 6 && secondInput.value.length <= 12) {
     if (secondInput.value.match(/[A-Z]+/)) {
       if (secondInput.value.match(/[a-z]+/)) {
-        if (firstInput.value.match(/[0-9]+/)) {
+        if (secondInput.value.match(/[0-9]+/)) {
           if (firstInput.value === secondInput.value) {
             secondError.innerHTML = `
             ✅ 
@@ -165,8 +165,8 @@ function testPassword2() {
       } else {
         secondError.innerHTML = `
         ⚠️ Letras minúsculas
-        <br>
-        `;
+    <br>
+    `;
       }
     } else {
       secondError.innerHTML = `
