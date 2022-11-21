@@ -1081,8 +1081,8 @@ select {
   }
 
   .modal-content {
-    width: 90%;
-    height: 40%;
+    width: 100%;
+    height: 60%;
   }
 
   .thumb-container .player {
