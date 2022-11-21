@@ -438,7 +438,21 @@ select {
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row: 2;
-  /* fazer triangulo ponta */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+#together:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2%;
+  height: 30%;
+  background: var(--light-gray) ;
+  transform: translate(50%, -50%) rotate(45deg) scale(1.8);
 }
 
 #together-text {
@@ -951,6 +965,10 @@ select {
     padding-inline: 16px;
   }
 
+  #together::after{
+    width: 6%;
+  }
+
   #together-text {
     margin: 0;
   }
@@ -1030,6 +1048,7 @@ select {
 
   .card {
     width: 328px;
+    height: 435px;
   }
 
   .navigation-auto {
@@ -1059,6 +1078,7 @@ select {
     flex-direction: row;
     justify-content: center;
     margin-top: 0;
+    height: 500px;
     align-items: center;
   }
 
@@ -1155,16 +1175,24 @@ select {
     margin-bottom: 84px;
   }
 
-  #rd-footer .rd-bw-logo {
-    border-bottom: 1px solid #78edf2;
-    width: 328px;
-  }
-
   #rd-footer {
     align-content: center;
     align-items: center;
     padding: 0;
     height: 221px;
+  }
+
+  #rd-footer .rd-bw-logo {
+    margin-bottom: 24px;
+  }
+
+  #rd-footer .social-list {
+    border-top: 1px solid #78edf2;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 328px;
+    padding-top: 24px;
   }
 
   .footer-text {

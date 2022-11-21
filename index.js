@@ -214,6 +214,7 @@ function showFeedback(e) {
   }
 }
 
+
 const slideBtn1 = document.querySelector(".auto-btn1");
 const slideBtn2 = document.querySelector(".auto-btn2");
 const slideBtn3 = document.querySelector(".auto-btn3");
@@ -228,12 +229,21 @@ const card3 = document.querySelector(".card3");
 const card4 = document.querySelector(".card4");
 const card5 = document.querySelector(".card5");
 const card6 = document.querySelector(".card6");
+
 card1.addEventListener("click", slide2);
 card2.addEventListener("click", slide3);
 card3.addEventListener("click", slide4);
 card4.addEventListener("click", slide5);
 card5.addEventListener("click", slide6);
 card6.addEventListener("click", slide1);
+
+let drag = false;
+
+slider.addEventListener("mousedown", () => (drag = false));
+
+slider.addEventListener("mousemove", () => (drag = true));
+
+slider.addEventListener("mouseup", () => console.log(drag ? "drag" : "click"));
 
 function slide1() {
   slider.style.transition = "transform 0.5s";
