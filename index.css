@@ -79,7 +79,6 @@ section:first-of-type {
   position: relative;
 }
 
-
 .btn-highlight-enabled {
   display: flex;
   flex-direction: row;
@@ -98,7 +97,9 @@ section:first-of-type {
   background: var(--light-yellow);
 }
 
-.btn-highlight-enabled:after, .btn-secondary-enabled:after, .btn-primary-enabled:after  {
+.btn-highlight-enabled:after,
+.btn-secondary-enabled:after,
+.btn-primary-enabled:after {
   content: "";
   border-top: 4px solid #000;
   width: 100%;
@@ -332,7 +333,8 @@ select {
   padding: 0;
 }
 
-#errormsg1, #errormsg2 {
+#errormsg1,
+#errormsg2 {
   margin: 0 !important;
   border: none !important;
   align-self: flex-end;
@@ -442,6 +444,10 @@ select {
 #together-text > p > mark {
   background: none;
   font: var(--body-md);
+}
+
+.navigation-auto {
+  display: none;
 }
 
 #results {
@@ -561,7 +567,6 @@ select {
   margin-bottom: 40px;
 }
 
-
 #video {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -592,7 +597,6 @@ select {
   display: flex;
   justify-content: space-around;
 }
-
 
 .video-text button > figure {
   display: flex;
@@ -697,7 +701,6 @@ select {
   width: 257px;
 }
 
-
 #logo-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -795,11 +798,11 @@ select {
     margin-bottom: 28%;
   }
 
-  .form-btn{
+  .form-btn {
     width: 281px;
   }
 
-  .bannerbtn{
+  .bannerbtn {
     width: 215px;
   }
 
@@ -980,11 +983,56 @@ select {
     width: 328px;
   }
 
+  .slider {
+    margin: auto;
+    /* width: 328px; */
+    /* overflow: hidden; */
+    position: relative;    
+    transform: translateX(55em);
+  }
+
+  .background-btn {
+    background-color: var(--medium-blue) !important;
+  }
+
+  .card {
+    width: 328px;
+  }
+
+  .navigation-auto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-block: 36px 52px;
+  }
+
+  .navigation-auto > button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+    margin-right:24px;
+    background-color: white;
+  }
+
+  .auto-btn6 {
+    margin-left: 0;
+  }
+
+  /* .manual-navigation{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+  } */
+
   #cards-container {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    align-items: stretch;
   }
 
   #banner {
@@ -1003,7 +1051,6 @@ select {
   #banner > h3 {
     font: var(--heading-md-mob);
   }
-
 
   #video,
   #logos {
@@ -1042,7 +1089,6 @@ select {
     width: 80px;
     height: 80px;
   }
-
 
   .thumb {
     width: 328px;
