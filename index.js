@@ -129,7 +129,7 @@ function testPassword2() {
             return true;
           } else {
             secondError.innerHTML = `
-            ⚠️ Não é igual
+            ⚠️ Devem ser iguais
             <br> `;
           }
         } else {
