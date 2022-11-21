@@ -975,6 +975,7 @@ select {
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   #tools > h3 {
@@ -985,8 +986,7 @@ select {
 
   .slider {
     margin: auto;
-    /* width: 328px; */
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;    
     transform: translateX(55em);
   }
@@ -1081,8 +1081,8 @@ select {
   }
 
   .modal-content {
-    width: 100%;
-    height: 60%;
+    width: 90%;
+    height: 50%;
   }
 
   .thumb-container .player {
