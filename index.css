@@ -1153,6 +1153,10 @@ select {
     flex-direction: column;
   }
 
+  .video-text button {
+    margin-top: 16px;
+  }
+
   .video-text > h3 {
     width: 328px;
   }
