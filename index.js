@@ -92,25 +92,25 @@ function testPassword1() {
           return true;
         } else {
           firstError.innerHTML = `
-          ⚠️ A senha deve conter números
+          ⚠️ Números
           <br>
           `;
         }
       } else {
         firstError.innerHTML = `
-    ⚠️ A senha deve conter letras minúsculas
+        ⚠️ Letras minúsculas
     <br>
     `;
       }
     } else {
       firstError.innerHTML = `
-      ⚠️ A senha deve conter letras maiúsculas
+      ⚠️ Letras maiúsculas
       <br>
       `;
     }
   } else {
     firstError.innerHTML = `
-    ⚠️ A senha deve conter mais de 6 dígitos
+    ⚠️ Mais de 6 dígitos
     <br>
     `;
   }
