@@ -265,6 +265,7 @@ section:first-of-type {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 650px 331px;
+  max-height: 650px;
 }
 
 #oportunities > article:first-of-type {
@@ -558,7 +559,7 @@ select {
   font: var(--heading-md-desk);
   width: 600px;
   margin-left: 108px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 #cards-container {
@@ -651,7 +652,7 @@ select {
 
 #video .video-text {
   margin-right: 80px;
-} 
+}
 
 .video-text button {
   width: 270px;
@@ -743,7 +744,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 144px 45px 120px 108px;
+  margin: 120px 45px 120px 108px;
 }
 
 .logos-text > h3 {
@@ -949,6 +950,7 @@ select {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    max-height: fit-content;
   }
 
   #oportunities > article:first-of-type {
@@ -994,7 +996,7 @@ select {
   }
 
   #together-text {
-    margin: 0;
+    margin-inline: 16px;
   }
 
   #together-text > h3,
@@ -1034,8 +1036,8 @@ select {
   }
 
   #results-text {
-    width: 328px;
     margin-right: 0px;
+    padding-inline: 16px;
   }
 
   #results-text > p {
@@ -1045,7 +1047,6 @@ select {
 
   #tools {
     display: flex;
-    margin-inline: 16px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
@@ -1106,7 +1107,7 @@ select {
     flex-direction: row;
     justify-content: center;
     margin-top: 0;
-    height: 500px;
+    height: 460px;
     align-items: center;
   }
 
@@ -1145,7 +1146,11 @@ select {
   }
 
   #video .video-text {
-    margin: 40px 16px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .video-text > h3 {
@@ -1184,7 +1189,7 @@ select {
   .logos-text {
     width: 328px;
     margin: 0;
-    margin-top: 184px;
+    margin-top: 145px;
   }
 
   .logos-text > h3 {
