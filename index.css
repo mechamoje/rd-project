@@ -400,6 +400,7 @@ select {
 .oportunity > p {
   font: var(--subtitle-sm);
   margin-top: 40px;
+  width: 100%;
 }
 
 .oportunity-title {
@@ -471,7 +472,7 @@ select {
 }
 
 .marker-container:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -484,14 +485,15 @@ select {
 
 .marker-img {
   position: relative;
-  width: 1065px;
+  width: 100%;
   height: 600px;
-  left: -120px;
+  left: 108px;
 }
 
 #results-text {
-  width: 496px;
+  width: 100%;
   margin-right: 108px;
+  max-width: 500px;
 }
 
 #results-text > h3 {
@@ -567,7 +569,7 @@ select {
   background: url(./assets/images/bgbanner.svg) no-repeat 50%;
   background-size: cover;
   height: 396px;
-  width: 1224px;
+  width: 100%;
   margin-inline: auto;
   margin-block: 120px;
   display: flex;
@@ -605,6 +607,7 @@ select {
   background-color: var(--light-gray);
   height: 317px;
   align-content: center;
+  margin-right: 108px;
 }
 
 #video .video-text {
@@ -612,6 +615,7 @@ select {
   flex-direction: column;
   align-items: flex-start;
   margin: 66px 80px 66px 108px;
+  justify-content: center;
 }
 
 .video-text button {
@@ -811,8 +815,6 @@ select {
     display: none;
   }
 
-
-
   .btns-mobile {
     display: flex;
     height: 88px;
@@ -933,6 +935,11 @@ select {
 
   #oportunities-form > h4 {
     font: var(--heading-xs-mob);
+  }
+
+  #url {
+    align-self: stretch;
+    align-content: center;
   }
 
   .icon1,
@@ -1169,3 +1176,9 @@ select {
     padding: 0;
   }
 }
+
+/* arrumar form mobile 
+btn amarelo banner width 
+footer
+slide quando arrasta 
+tirar menu no clique*/
