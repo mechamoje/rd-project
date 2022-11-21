@@ -212,7 +212,7 @@ function showHidePassword2() {
 function showFeedback(e) {
   e.preventDefault();
   if (testPassword1() && testPassword2() && comparePasswords()) {
-    fetch("https://rdstation-signup-psel.herokuas.com", {
+    fetch("https://rdstation-signup-psel.herokuapp.com", {
       method: "POST",
       body: new FormData(form),
     })
