@@ -1140,7 +1140,7 @@ select {
 
   .showmobile {
     display: flex;
-    width: 256px;
+    width: 256px !important;
     margin-bottom: 84px;
   }
 
