@@ -938,8 +938,7 @@ select {
   }
 
   #url {
-    align-self: stretch;
-    align-content: center;
+    margin-top: 21px !important;
   }
 
   .icon1,
@@ -1090,6 +1089,7 @@ select {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    margin-right: 0;
   }
 
   #video .video-text {
