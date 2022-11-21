@@ -63,6 +63,7 @@ section:first-of-type {
   font: var(--body-sm);
   text-transform: uppercase;
   position: relative;
+  color: var(--darker-gray);
 }
 
 .btn-primary-enabled:hover {
@@ -91,6 +92,7 @@ section:first-of-type {
   font: var(--body-sm);
   text-transform: uppercase;
   position: relative;
+  color: var(--darker-gray);
 }
 
 .btn-highlight-enabled:hover {
@@ -123,6 +125,7 @@ section:first-of-type {
   font: var(--body-sm);
   text-transform: uppercase;
   position: relative;
+  color: var(--darker-gray);
 }
 
 .btn-secondary-enabled:hover {
@@ -807,6 +810,8 @@ select {
   .logos-btn {
     display: none;
   }
+
+
 
   .btns-mobile {
     display: flex;
