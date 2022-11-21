@@ -1021,18 +1021,12 @@ select {
     margin-left: 0;
   }
 
-  /* .manual-navigation{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-  } */
-
   #cards-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 0;
-    align-items: stretch;
+    align-items: center;
   }
 
   #banner {
