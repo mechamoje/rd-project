@@ -110,222 +110,231 @@
       </div>
     </header>
 
-    <section id="oportunities">
-      <article class="oportunity">
-        <h1 class="oportunity-title">
-          Gere mais <mark> oportunidades </mark> para seu negócio
-        </h1>
-        <p class="oportunity-text">
-          O RD Station Marketing é um software para sua empresa fazer campanhas
-          melhores, nutrir Leads, gerar oportunidades comerciais qualificadas e
-          alcançar mais resultados.
-        </p>
-      </article>
+    <section id="oportunities-sec">
+      <div id="oportunities">
+        <article class="oportunity">
+          <h1 class="oportunity-title">
+            Gere mais <mark> oportunidades </mark> para seu negócio
+          </h1>
+          <p class="oportunity-text">
+            O RD Station Marketing é um software para sua empresa fazer
+            campanhas melhores, nutrir Leads, gerar oportunidades comerciais
+            qualificadas e alcançar mais resultados.
+          </p>
+        </article>
 
-      <form id="oportunities-form">
-        <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
-        <span>Não precisa cadastrar cartão de crédito. 😉</span>
+        <form id="oportunities-form">
+          <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
+          <span>Não precisa cadastrar cartão de crédito. 😉</span>
 
-        <label class="first-label" for="name"
-          >Diga, qual seu nome?
-          <input
-            required
-            placeholder="Insira seu nome"
-            type="text"
-            id="name"
-            name="name"
-          />
-        </label>
-        <label for="e-mail"
-          >Seu email de trabalho
-          <input
-            required
-            placeholder="Insira seu e-mail"
-            type="e-mail"
-            id="e-mail"
-            name="e-mail"
-        /></label>
-        <label for="tel-input"
-          >Seu telefone
-          <input
-            required
-            placeholder="Insira seu número de telefone com DDD"
-            type="text"
-            id="tel-input"
-            name="tel"
-            maxlength="15"
-        /></label>
-        <label for="cargo"
-          >Seu cargo de ocupação
-          <select required class="select-list">
-            <option hidden class="placeholder" role="placeholder">
-              Selecione seu cargo
-            </option>
-            <option value="Sócio">Sócio(a) / CEO / Proprietário(a)</option>
-            <option value="Diretor">Diretor(a) de Vendas</option>
-            <option value="Diretor mkt">Diretor(a) de Marketing</option>
-            <option value="Diretor outros">Diretor(a) Outras Áreas</option>
-            <option value="Gerente mkt">Gerente de Marketing</option>
-            <option value="Gerente vendas">Gerente de Vendas</option>
-            <option value="Coordenador supervisor mkt">
-              Coordenador(a)/Supervisor(a) de Marketing
-            </option>
-            <option value="Analista mkt">
-              Analista/Assistente de Marketing
-            </option>
-            <option value="Analista vendas">
-              Analista/Assistente de Vendas
-            </option>
-            <option value="Vendedor contas">
-              Vendedor(a) / Executivo(a) de Contas
-            </option>
-            <option value="Estudante">Estudante</option>
-            <option value="Outros Cargos">Outros Cargos</option>
-          </select></label
-        >
-        <div id="password-box">
-          <label for="password1">
-            Crie uma senha <span id="errormsg1"></span>
+          <label class="first-label" for="name"
+            >Diga, qual seu nome?
             <input
-              id="password1"
-              minlength="6"
-              maxlength="12"
               required
-              placeholder="• • • • • • • •"
-              type="password"
-              oninput="testPassword1()"
-              name="first-password"
+              placeholder="Insira seu nome"
+              type="text"
+              id="name"
+              name="name"
             />
           </label>
-          <div class="icon1" onclick="showHidePassword1()"></div>
-        </div>
-        <div id="second-password-box">
-          <label for="password2"
-            >Confirme sua senha <span id="errormsg2"></span>
+          <label for="e-mail"
+            >Seu email de trabalho
             <input
-              minlength="6"
-              maxlength="12"
               required
-              placeholder="Branding-rd@2021*"
-              id="password2"
-              type="password"
-              oninput="testPassword2()"
-              name="second-password"
+              placeholder="Insira seu e-mail"
+              type="e-mail"
+              id="e-mail"
+              name="e-mail"
           /></label>
-          <div class="icon2" onclick="showHidePassword2()"></div>
-        </div>
-        <label for="site">Qual o site da sua empresa?</label>
-        <label class="label-input" for="has-website"
-          >Meu site é
-          <input
-            class="radio-input"
-            type="radio"
-            id="has-website"
-            name="has-website"
-            value="has-website"
-          />
-        </label>
-        <input required placeholder="" type="url" id="url" />
+          <label for="tel-input"
+            >Seu telefone
+            <input
+              required
+              placeholder="Insira seu número de telefone com DDD"
+              type="text"
+              id="tel-input"
+              name="tel"
+              maxlength="15"
+          /></label>
+          <label for="cargo"
+            >Seu cargo de ocupação
+            <select required class="select-list">
+              <option hidden class="placeholder" role="placeholder">
+                Selecione seu cargo
+              </option>
+              <option value="Sócio">Sócio(a) / CEO / Proprietário(a)</option>
+              <option value="Diretor">Diretor(a) de Vendas</option>
+              <option value="Diretor mkt">Diretor(a) de Marketing</option>
+              <option value="Diretor outros">Diretor(a) Outras Áreas</option>
+              <option value="Gerente mkt">Gerente de Marketing</option>
+              <option value="Gerente vendas">Gerente de Vendas</option>
+              <option value="Coordenador supervisor mkt">
+                Coordenador(a)/Supervisor(a) de Marketing
+              </option>
+              <option value="Analista mkt">
+                Analista/Assistente de Marketing
+              </option>
+              <option value="Analista vendas">
+                Analista/Assistente de Vendas
+              </option>
+              <option value="Vendedor contas">
+                Vendedor(a) / Executivo(a) de Contas
+              </option>
+              <option value="Estudante">Estudante</option>
+              <option value="Outros Cargos">Outros Cargos</option>
+            </select></label
+          >
+          <div id="password-box">
+            <label for="password1">
+              Crie uma senha <span id="errormsg1"></span>
+              <input
+                id="password1"
+                minlength="6"
+                maxlength="12"
+                required
+                placeholder="• • • • • • • •"
+                type="password"
+                oninput="testPassword1()"
+                name="first-password"
+              />
+            </label>
+            <div class="icon1" onclick="showHidePassword1()"></div>
+          </div>
+          <div id="second-password-box">
+            <label for="password2"
+              >Confirme sua senha <span id="errormsg2"></span>
+              <input
+                minlength="6"
+                maxlength="12"
+                required
+                placeholder="Branding-rd@2021*"
+                id="password2"
+                type="password"
+                oninput="testPassword2()"
+                name="second-password"
+            /></label>
+            <div class="icon2" onclick="showHidePassword2()"></div>
+          </div>
+          <label for="site">Qual o site da sua empresa?</label>
+          <label class="label-input" for="has-website"
+            >Meu site é
+            <input
+              class="radio-input"
+              type="radio"
+              id="has-website"
+              name="has-website"
+              value="has-website"
+            />
+          </label>
+          <input required placeholder="" type="url" id="url" />
 
-        <label class="label-input" for="no-website"
-          >Ainda não tenho site
+          <label class="label-input" for="no-website"
+            >Ainda não tenho site
 
-          <input
-            class="radio-input"
-            type="radio"
-            id="no-website"
-            name="no-website"
-            value="no-website"
-          />
-        </label>
+            <input
+              class="radio-input"
+              type="radio"
+              id="no-website"
+              name="no-website"
+              value="no-website"
+            />
+          </label>
 
-        <small id="form-details">
-          <ul>
-            <li>
-              Ao criar minha conta estou de acordo com os
-              <a
-                href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/"
-                target="_blank"
-                rel="noreferrer"
-                >termos de uso
-              </a>
-              do software e
-              <a
-                href="https://legal.rdstation.com/pt/privacy-policy/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                política de privacidade.</a
-              >
-            </li>
-            <li>
-              Ao preencher o formulário, concordo em receber comunicações de
-              acordo com meus interesses.
-            </li>
-            <li>
-              *Você pode alterar suas permissões de comunicação a qualquer
-              tempo.
-            </li>
-          </ul>
-        </small>
-        <button
-          class="btn-highlight-enabled form-btn"
-          type="submit"
-          name="account-form"
-          value="filled-account-form"
-          role="enviar formulário e criar conta"
-        >
-          Criar conta
-        </button>
-      </form>
-      <div id="together">
-        <article id="together-text">
-          <h3>Estaremos juntos desde o primeiro passo!</h3>
-          <p>
-            Se você ainda não sabe como extrair o máximo das ações digitais, não
-            tem problema. O <mark>RD Station Marketing</mark> é mais que uma
-            ferramenta, nos importamos com os seus resultados.
-          </p>
-          <p>Estaremos com você do <mark>planejamento até a prática! </mark></p>
-        </article>
+          <small id="form-details">
+            <ul>
+              <li>
+                Ao criar minha conta estou de acordo com os
+                <a
+                  href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >termos de uso
+                </a>
+                do software e
+                <a
+                  href="https://legal.rdstation.com/pt/privacy-policy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  política de privacidade.</a
+                >
+              </li>
+              <li>
+                Ao preencher o formulário, concordo em receber comunicações de
+                acordo com meus interesses.
+              </li>
+              <li>
+                *Você pode alterar suas permissões de comunicação a qualquer
+                tempo.
+              </li>
+            </ul>
+          </small>
+          <button
+            class="btn-highlight-enabled form-btn"
+            type="submit"
+            name="account-form"
+            value="filled-account-form"
+            role="enviar formulário e criar conta"
+          >
+            Criar conta
+          </button>
+        </form>
       </div>
+        <div id="together-wrapper">
+          <div id="together">
+            <article id="together-text">
+              <h3>Estaremos juntos desde o primeiro passo!</h3>
+              <p>
+                Se você ainda não sabe como extrair o máximo das ações digitais,
+                não tem problema. O <mark>RD Station Marketing</mark> é mais que
+                uma ferramenta, nos importamos com os seus resultados.
+              </p>
+              <p>
+                Estaremos com você do <mark>planejamento até a prática! </mark>
+              </p>
+            </article>
+          </div>
+        </div>
+
     </section>
 
-    <section id="results">
-      <figure class="marker-container">
-        <img
-          class="marker-img"
-          src="./assets/images/marker.svg"
-          alt="mulher escrevendo com marcador azul"
-        />
-      </figure>
-      <article id="results-text">
-        <h3>Resultados previsíveis e mais clientes para sua empresa</h3>
-        <p>Torne sua atuação no Marketing Digital mais eficaz</p>
-        <ul>
-          <li>
-            <b> Ferramentas intuitivas</b> e com modelos prontos, vídeos
-            explicativos e passo a passo guiado
-          </li>
-          <li>
-            <b> Implementação com especialistas</b> focada em planejamento e
-            prática (nos planos Marketing Pro e Enterprise)
-          </li>
-          <li>
-            <b>Time de especialistas em Sucesso do Cliente </b> para apoiar na
-            otimização da estratégia em cada fase da sua jornada (nos planos
-            Marketing Pro e Enterprise)
-          </li>
-          <li>
-            <b> Suporte técnico</b> em português, espanhol e inglês para tirar
-            dúvidas, com 97% de satisfação entre nossos clientes
-          </li>
-          <li>
-            <b>Muito conteúdo educativo</b>, eventos, cursos da
-            <a> RD University</a> e comunidades para você continuar evoluindo
-          </li>
-        </ul>
-      </article>
+    <section id="results-sec">
+      <div id="results">
+        <figure class="marker-container">
+          <img
+            class="marker-img"
+            src="./assets/images/marker.svg"
+            alt="mulher escrevendo com marcador azul"
+          />
+        </figure>
+        <article id="results-text">
+          <h3>Resultados previsíveis e mais clientes para sua empresa</h3>
+          <p>Torne sua atuação no Marketing Digital mais eficaz</p>
+          <ul>
+            <li>
+              <b> Ferramentas intuitivas</b> e com modelos prontos, vídeos
+              explicativos e passo a passo guiado
+            </li>
+            <li>
+              <b> Implementação com especialistas</b> focada em planejamento e
+              prática (nos planos Marketing Pro e Enterprise)
+            </li>
+            <li>
+              <b>Time de especialistas em Sucesso do Cliente </b> para apoiar na
+              otimização da estratégia em cada fase da sua jornada (nos planos
+              Marketing Pro e Enterprise)
+            </li>
+            <li>
+              <b> Suporte técnico</b> em português, espanhol e inglês para tirar
+              dúvidas, com 97% de satisfação entre nossos clientes
+            </li>
+            <li>
+              <b>Muito conteúdo educativo</b>, eventos, cursos da
+              <a> RD University</a> e comunidades para você continuar evoluindo
+            </li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="tools">
@@ -433,6 +442,7 @@
     </section>
 
     <section id="video">
+      <div id="video-wrapper"> 
       <article class="video-text">
         <h3>Entenda melhor como o RD Station Marketing funciona na prática</h3>
         <button class="btn-secondary-enabled videobtn">
@@ -463,6 +473,7 @@
           ></iframe>
         </div>
       </div>
+    </div>
     </section>
 
     <section id="logos">
@@ -539,6 +550,7 @@
     </section>
 
     <footer id="rd-footer">
+      <div id="footer-wrapper"> 
       <div id="section-container">
         <figure>
           <a href="#oportunities" id="footer-logo">
@@ -607,6 +619,7 @@
           Política de Privacidade.</a
         >
       </small>
+    </div>
     </footer>
   </body>
   <script src="./index.js"></script>

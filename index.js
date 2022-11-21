@@ -1,6 +1,7 @@
 const navLink = document.querySelector(".dropdown-click");
 const menu = document.querySelector("#dropdown-menu");
 const play = document.querySelector(".player");
+const playBtn = document.querySelector(".videobtn");
 const modal = document.querySelector(".modal-wrapper");
 const close = document.querySelector(".modal-close");
 const video = document.querySelector(".modal-content");
@@ -10,6 +11,14 @@ const navBar = document.querySelector(".navbar");
 
 navLink.addEventListener("click", () => {
   menu.classList.toggle("menu-open");
+});
+
+playBtn.addEventListener("click", () => {
+  modal.classList.add("active-modal");
+  video.setAttribute(
+    "src",
+    "https://www.youtube.com/embed/lGCesaaLi4s?autoplay=1"
+  );
 });
 
 play.addEventListener("click", () => {
